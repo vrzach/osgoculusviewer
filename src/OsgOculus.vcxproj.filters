@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\Repository\OSG Oculus Viewer\src\oculusviewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Repository\OSG Oculus Viewer\src\oculusdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Repository\OSG Oculus Viewer\src\oculuseventhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Repository\OSG Oculus Viewer\src\oculustexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Repository\OSG Oculus Viewer\src\oculusupdateslavecallback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Repository\OSG Oculus Viewer\src\oculustouchmanipulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\Repository\OSG Oculus Viewer\src\oculusviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Repository\OSG Oculus Viewer\src\oculusdevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Repository\OSG Oculus Viewer\src\oculuseventhandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Repository\OSG Oculus Viewer\src\oculustexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Repository\OSG Oculus Viewer\src\oculusupdateslavecallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Repository\OSG Oculus Viewer\src\oculustouchmanipulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Repository\OSG Oculus Viewer\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{04DD8CEA-5DC8-3D29-9626-B5F133B8EF77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{418841C4-5577-3C1D-8B26-10E5F5AD04FD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

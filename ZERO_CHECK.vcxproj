@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19596B9B-2FDA-374B-B9FC-0FAE11AD84A6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OculusSDK\LibOVR\Include;C:\OpenSceneGraph-3.5\OpenSceneGraph\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OculusSDK\LibOVR\Include;C:\OpenSceneGraph-3.5\OpenSceneGraph\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Repository\OSG Oculus Viewer\CMakeFiles\fd00cc451ef2779bf729dd6a9e941544\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HG:/Repository/OSG Oculus Viewer" "-BG:/Repository/OSG Oculus Viewer" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "G:/Repository/OSG Oculus Viewer/OsgOculusViewer.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/Repository/OSG Oculus Viewer/CMakeFiles/fd00cc451ef2779bf729dd6a9e941544/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenSceneGraph.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenThreads.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Findosg.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgDB.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgGA.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgUtil.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgViewer.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Findosg_functions.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Templates\CPackConfig.cmake.in;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeCCompiler.cmake;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeSystem.cmake;G:\Repository\OSG Oculus Viewer\CMakeLists.txt;G:\Repository\OSG Oculus Viewer\cmake\FindOculusSDK.cmake;G:\Repository\OSG Oculus Viewer\src\CMakeLists.txt;G:\Repository\OSG Oculus Viewer\src\osgoculusviewer.vcxproj.template;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Repository\OSG Oculus Viewer\CMakeFiles\generate.stamp;G:\Repository\OSG Oculus Viewer\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HG:/Repository/OSG Oculus Viewer" "-BG:/Repository/OSG Oculus Viewer" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "G:/Repository/OSG Oculus Viewer/OsgOculusViewer.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/Repository/OSG Oculus Viewer/CMakeFiles/fd00cc451ef2779bf729dd6a9e941544/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenSceneGraph.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindOpenThreads.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Findosg.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgDB.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgGA.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgUtil.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindosgViewer.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Findosg_functions.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Templates\CPackConfig.cmake.in;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeCCompiler.cmake;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;G:\Repository\OSG Oculus Viewer\CMakeFiles\3.11.1\CMakeSystem.cmake;G:\Repository\OSG Oculus Viewer\CMakeLists.txt;G:\Repository\OSG Oculus Viewer\cmake\FindOculusSDK.cmake;G:\Repository\OSG Oculus Viewer\src\CMakeLists.txt;G:\Repository\OSG Oculus Viewer\src\osgoculusviewer.vcxproj.template;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Repository\OSG Oculus Viewer\CMakeFiles\generate.stamp;G:\Repository\OSG Oculus Viewer\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
