@@ -139,8 +139,13 @@ void OculusDevice::updatePose(long long frameIndex)
 	// Call getEyeRenderDesc() each frame, since the returned values (e.g. HmdToEyePose) may change at runtime.
 	getEyeRenderDesc();
 
-	ovrPosef HmdToEyePose[2] = { m_eyeRenderDesc[0].HmdToEyePose, m_eyeRenderDesc[1].HmdToEyePose };
+	// New way
+	ovrVector3f HmdToEyePose[2] = { m_eyeRenderDesc[0].HmdToEyePose.Position, m_eyeRenderDesc[1].HmdToEyePose.Position };
 	ovr_GetEyePoses(m_session, frameIndex, ovrTrue, HmdToEyePose, m_eyeRenderPose, &m_sensorSampleTime);
+	
+	// Old way because ovr_GetEyePoses2 wasn't having issues linking.
+	//ovrPosef HmdToEyePose[2] = { m_eyeRenderDesc[0].HmdToEyePose, m_eyeRenderDesc[1].HmdToEyePose };
+	//ovr_GetEyePoses(m_session, frameIndex, ovrTrue, HmdToEyePose, m_eyeRenderPose, &m_sensorSampleTime);
 
 	// Update touch controllers
 	ovr_GetInputState(m_session, ovrControllerType_Touch, &m_controllerState);
